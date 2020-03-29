@@ -19,3 +19,21 @@ steps:
       exclude:
       - tag
 
+- name: publish
+  pull: always
+  image: plugins/docker:linux-amd64
+  settings:
+    auto_tag: true
+    auto_tag_suffix: linux-amd64
+    cache_from: appleboy/gin-docker-demo
+    daemon_off: false
+    dockerfile: Dockerfile
+    password:
+      from_secret: DOCKER_PASSWORD
+    repo: appleboy/gin-docker-demo
+    username:
+      from_secret: DOCKER_USERNAME
+  when:
+    event:
+      exclude:
+      - pull_request
