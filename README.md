@@ -41,9 +41,9 @@ docker build in GitHub Actions vs Drone CI/CD
       - pull_request
 ```
 
-## Sumary
+## Summary
 
 build time
 
-* GitHub Actions: 2m2s
-* Drone CI: **17s**
+* GitHub Actions: 1m10s ([logs](https://github.com/go-training/docker-in-github-actions-vs-drone/runs/542876427?check_suite_focus=true))
+* Drone CI: **17s** ([logs](https://cloud.drone.io/go-training/docker-in-github-actions-vs-drone/14/1/2))
