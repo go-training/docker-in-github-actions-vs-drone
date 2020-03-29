@@ -28,5 +28,6 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: appleboy/gin-docker-demo
         dockerfile: Dockerfile
+        always_pull: true
         tags: latest
 
