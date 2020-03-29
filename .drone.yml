@@ -28,10 +28,10 @@ steps:
     daemon_off: false
     dockerfile: Dockerfile
     password:
-      from_secret: DOCKER_PASSWORD
+      from_secret: docker_password
     repo: appleboy/gin-docker-demo
     username:
-      from_secret: DOCKER_USERNAME
+      from_secret: docker_username
   when:
     event:
       exclude:
