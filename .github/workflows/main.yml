@@ -28,6 +28,5 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         repository: appleboy/gin-docker-demo
         dockerfile: Dockerfile
-        tag_with_ref: true
-        add_git_labels: true
-        push: ${{ startsWith(github.ref, 'refs/tags/') }}
+        tags: latest
+
