@@ -18,6 +18,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    # - name: build and test code
+    #   run: make build
+
     - name: build and push image
       uses: docker/build-push-action@v1
       with:

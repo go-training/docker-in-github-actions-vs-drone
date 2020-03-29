@@ -7,17 +7,17 @@ platform:
   arch: amd64
 
 steps:
-- name: build-push
-  pull: always
-  image: golang:1.14
-  commands:
-  - go build -v -a -o docker-demo
-  environment:
-    CGO_ENABLED: 0
-  when:
-    event:
-      exclude:
-      - tag
+# - name: build-push
+#   pull: always
+#   image: golang:1.14
+#   commands:
+#   - go build -v -a -o docker-demo
+#   environment:
+#     CGO_ENABLED: 0
+#   when:
+#     event:
+#       exclude:
+#       - tag
 
 - name: publish
   pull: always
