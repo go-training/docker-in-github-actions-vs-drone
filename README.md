@@ -45,5 +45,5 @@ docker build in GitHub Actions vs Drone CI/CD
 
 build time
 
-* GitHub Actions: 1m10s ([logs](https://github.com/go-training/docker-in-github-actions-vs-drone/runs/542876427?check_suite_focus=true))
+* GitHub Actions: 1m10s ([logs](https://github.com/go-training/docker-in-github-actions-vs-drone/runs/542876427?check_suite_focus=true)) I make new [PR](https://github.com/docker/github-actions/pull/17) to improve speed.
 * Drone CI: **17s** ([logs](https://cloud.drone.io/go-training/docker-in-github-actions-vs-drone/14/1/2))
